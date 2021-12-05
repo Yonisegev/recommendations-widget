@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('../assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Medium;
+  src: url('../assets/fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('../assets/fonts/Roboto-Bold.ttf');
+}
+
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  font-family: 'Roboto-Regular', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+a {
+  background-color: transparent;
+}
+
+img {
+  border-style: none;
+  width: 100%;
+}
+
+.recommendations {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+@media only screen and (max-width: 550px) {
+  .recommendations {
+    padding: 0 20px;
+  }
+}
+
+.recommendations .recommendations-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 2%;
+}
+
+.recommendations .recommendations-header .taboola-logo-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.recommendations-header .taboola-logo-wrapper img {
+  width: 16px;
+  margin-right: 5px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 550px) {
+  .articles {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.articles > a {
+  flex-basis: 100%;
+  height: auto;
+  margin: 0 0 5% 2%;
+  text-decoration: none;
+}
+.articles > a:hover {
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+
+@media only screen and (min-width: 550px) {
+  .articles > a {
+    margin-bottom: 11%;
+    flex-basis: 31.33%;
+    min-width: 31.33%;
+    height: 220px;
+    max-height: 220px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .articles > a {
+    margin-bottom: 7%;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+  .articles > a {
+    margin-bottom: 5%;
+  }
+}
+
+.articles .thumbnail-wrapper {
+  height: 100%;
+  margin-bottom: 5px;
+}
+
+.articles > a .thumbnail-wrapper img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.articles .article-label-wrapper {
+  word-break: break-word;
+  overflow: hidden;
+}
+
+.articles .article-label-wrapper .label-title {
+  color: #000;
+  display: block;
+  line-height: 16px;
+  padding-bottom: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 450px;
+  font-family: 'Roboto-Bold', sans-serif;
+}
+
+.articles .article-label-wrapper .branding {
+  display: block;
+  color: #78787b;
+  font-size: 0.75rem;
+  line-height: 16px;
+}
+
+.error {
+  text-align: center;
+}

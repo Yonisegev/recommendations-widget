@@ -1,0 +1,17 @@
+{
+  "name": "taboola",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server",
+    "start:host": "live-server --open=host/index.html",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.3"
+  }
+}
